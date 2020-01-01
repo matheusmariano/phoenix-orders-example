@@ -7,5 +7,7 @@ defmodule OrdersWeb.Router do
 
   scope "/api", OrdersWeb do
     pipe_through :api
+
+    resources "/waiters", WaiterController, only: [:index, :show, :create, :update, :delete]
   end
 end
