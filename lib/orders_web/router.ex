@@ -12,5 +12,6 @@ defmodule OrdersWeb.Router do
 
     resources "/waiters", WaiterController, only: api_actions
     resources "/customers", CustomerController, only: api_actions
+    resources "/categories", CategoryController, only: api_actions
   end
 end
